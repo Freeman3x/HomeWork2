@@ -1,11 +1,10 @@
-﻿//Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+//Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 /*void SecondNum(int NumN)
 {
     if(NumN > 99 && NumN < 1000)
     {
-        int Num1 = NumN / 10;
-        int result = Num1 % 10;
-        Console.WriteLine($"Вторая цифра числа {result} ");
+        NumN = NumN / 10 % 10;
+        Console.WriteLine($"Вторая цифра числа {NumN} ");
     }
     else{ Console.WriteLine("Число не трехзначное");
     }
@@ -22,20 +21,19 @@ SecondNum(user_num);
     if(NumN > 99)
     {
      if(NumN > 999)
-     {
-      int A = NumN / 10;  
-      while(A > 999)
+     {  
+      while(NumN > 999)
       {
-        A = A /10;
+        NumN = NumN /10;
       }
-      int G = A % 10;
-      Console.WriteLine($"Третья цифра числа {G}");         
+      NumN = NumN % 10;
+      Console.WriteLine($"Третья цифра числа {NumN}");         
     }
       
      else
      {
-      int D = NumN % 10;
-      Console.WriteLine($"Третья цифра числа {D}");
+      NumN = NumN % 10;
+      Console.WriteLine($"Третья цифра числа {NumN}");
      }
 } 
     else
@@ -56,11 +54,11 @@ ThirdNum(user_num);
     {
       if(A < 6)
       {
-        Console.WriteLine("Увы,это не выходной");
+        Console.WriteLine("Это не выходной");
       }
       else
       {
-        Console.WriteLine("Ура,это выходной!!!");
+        Console.WriteLine(""Это выходной");
       }
     }
     else
