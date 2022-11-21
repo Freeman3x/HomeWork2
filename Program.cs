@@ -38,7 +38,7 @@ SecondNum(user_num);
 } 
     else
     {
-     Console.WriteLine("Число не трехзначное");
+     Console.WriteLine("Третьей цифры числа нет");
     }
 }
 
